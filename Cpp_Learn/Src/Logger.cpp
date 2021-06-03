@@ -3,31 +3,35 @@
 
 namespace Marouane
 {
-	void Logger::LOG_INFO(const char* buffer)
+	template<typename T>
+	void Logger::LOG_INFO(T buffer)
 	{
 		std::cout << "\u001b[32m[INFO] [" << __TIME__ << "]  : " << buffer << "\u001b[0m" << std::endl;
 	}
 
-	void Logger::LOG_WARN(const char* buffer)
+	template<typename T>
+	void Logger::LOG_WARN(T buffer)
 	{
 		std::cout << "\u001b[33m[WARN] [" << __TIME__ << "]  : " << buffer << "\u001b[0m" << std::endl;
 	}
 
-	void Logger::LOG_ERROR(const char* buffer)
+	template<typename T>
+	void Logger::LOG_ERROR(T buffer)
 	{
 		std::cout << "\u001b[31m[ERROR][" << __TIME__ << "]  : " << buffer << "\u001b[0m" << std::endl;
 	}
 
-	void Logger::LOG_FETAL(const char* buffer)
+	template<typename T>
+	void Logger::LOG_FETAL(T buffer)
 	{
 		std::cout << "\u001b[35m[FETAL][" << __TIME__ << "]  : " << buffer << "\u001b[0m" << std::endl;
 	}
 
-
-	void Logger::LOG_LK(const char* buffer, LEVEL level, COLOR color)
+	template<typename T>
+	void Logger::LOG_LK(T buffer, LEVEL level, COLOR color)
 	{
-		const char* clr = "";
-		const char* lvl = "";
+		T clr = "";
+		T lvl = "";
 		switch (color)
 		{
 		case COLOR_RED:

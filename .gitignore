@@ -1,2 +1,8 @@
 premake5.exe
-/.vs
+.vs
+bin
+bin-int
+CppLearning.sln
+Cpp_Learn/Cpp_Learn.vcxproj
+Cpp_Learn/Cpp_Learn.vcxproj.filters
+Cpp_Learn/Cpp_Learn.vcxproj.user

@@ -1,16 +1,22 @@
 #include <iostream>
 #include "Headers/Logger.h"
+#include "Headers/Bank.h"
 
+using namespace Marouane;
+
+template<typename T>
+void Print(const T& buffer)
+{
+	std::cout << buffer << std::endl;
+}
 
 int main()
 {
-	Marouane::Logger::LOG_INFO("Hi i am Marouane!");
-	Marouane::Logger::LOG_WARN("Hi i am Marouane!");
-	Marouane::Logger::LOG_ERROR("Hi i am Marouane!");
-	Marouane::Logger::LOG_FETAL("Hi i am Marouane!");
-	std::cout << std::endl << std::endl;
-	Marouane::Logger::LOG_LK("Hi i am Marouane!", Marouane::LEVEL::ERROR, Marouane::COLOR::COLOR_BLUE);
-	Marouane::Logger::LOG_LK("Hi i am Marouane!", Marouane::LEVEL::FETAL, Marouane::COLOR::COLOR_CYAN);
+	//Logger::LOG_LK("Hello world!", Marouane::INFO, Marouane::COLOR_YELLOW);
+
+	Bank BMCE("BMCE");
+	//Logger::LOG_INFO(BMCE.GetName());
+	Print(BMCE.GetName());
 
 	return 0;
 }

@@ -25,12 +25,17 @@ namespace Marouane
 	{
 	public:
 
-		static void LOG_INFO(const char* buffer);
-		static void LOG_WARN(const char* buffer);
-		static void LOG_ERROR(const char* buffer);
-		static void LOG_FETAL(const char* buffer);
-		static void LOG_LK(const char* buffer,LEVEL level, COLOR color);
-	};
+		template<typename T>
+		static void LOG_INFO(T buffer);
+		template<typename T>
+		static void LOG_WARN(T buffer);
+		template<typename T>
+		static void LOG_ERROR(T buffer);
+		template<typename T>
+		static void LOG_FETAL(T buffer);
+		template<typename T>
+		static void LOG_LK(T buffer,LEVEL level, COLOR color);
 
+	};
 
 }
