@@ -74,7 +74,7 @@ project "OpenGL_Learning"
 
 
 project "GLFW"
-	location "Vendor/GLFW"
+	location "VND/GLFW"
 	kind "StaticLib"
 
 	language "C"
@@ -89,33 +89,33 @@ project "GLFW"
 
 		files
 	{
-		"Vendor/GLFW/src/glfw3.h",
-		"Vendor/GLFW/src/glfw3native.h",
-		"Vendor/GLFW/src/glfw_config.h",
-		"Vendor/GLFW/src/context.c",
-		"Vendor/GLFW/src/init.c",
-		"Vendor/GLFW/src/input.c",
-		"Vendor/GLFW/src/monitor.c",
-		"Vendor/GLFW/src/vulkan.c",
-		"Vendor/GLFW/src/window.c"
+		"VND/GLFW/src/glfw3.h",
+		"VND/GLFW/src/glfw3native.h",
+		"VND/GLFW/src/glfw_config.h",
+		"VND/GLFW/src/context.c",
+		"VND/GLFW/src/init.c",
+		"VND/GLFW/src/input.c",
+		"VND/GLFW/src/monitor.c",
+		"VND/GLFW/src/vulkan.c",
+		"VND/GLFW/src/window.c"
 	}
 
 	filter "system:windows"
 	files
 	{
-			"Vendor/GLFW/src/win32_joystick.h",
-			"Vendor/GLFW/src/wgl_context.h",
-			"Vendor/GLFW/src/egl_context.h",
-			"Vendor/GLFW/src/osmesa_context.h",
-			"Vendor/GLFW/src/win32_init.c",
-			"Vendor/GLFW/src/win32_joystick.c",
-			"Vendor/GLFW/src/win32_monitor.c",
-			"Vendor/GLFW/src/win32_time.c",
-			"Vendor/GLFW/src/win32_thread.c",
-		    "Vendor/GLFW/src/egl_context.c",
-			"Vendor/GLFW/src/win32_window.c ",
-			"Vendor/GLFW/src/wgl_context.c",
-		    "Vendor/GLFW/src/osmesa_context.c"
+			"VND/GLFW/src/win32_joystick.h",
+			"VND/GLFW/src/wgl_context.h",
+			"VND/GLFW/src/egl_context.h",
+			"VND/GLFW/src/osmesa_context.h",
+			"VND/GLFW/src/win32_init.c",
+			"VND/GLFW/src/win32_joystick.c",
+			"VND/GLFW/src/win32_monitor.c",
+			"VND/GLFW/src/win32_time.c",
+			"VND/GLFW/src/win32_thread.c",
+		    "VND/GLFW/src/egl_context.c",
+			"VND/GLFW/src/win32_window.c ",
+			"VND/GLFW/src/wgl_context.c",
+		    "VND/GLFW/src/osmesa_context.c"
 	}
 
 	defines
