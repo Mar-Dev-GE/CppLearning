@@ -1,14 +1,12 @@
 #pragma once 
 
-#include <string>
+#include <iostream>
+#include <string.h>
 
 class Bank
 {
-	std::string s_Name;
 public:
-	Bank(std::string Name);
 
-
-public:
-	std::string& GetName();
+	virtual std::string GetName() = 0;
+	virtual std::string GetNationnality() = 0;
 };

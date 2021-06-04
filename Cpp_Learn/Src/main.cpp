@@ -4,19 +4,20 @@
 
 using namespace Marouane;
 
-template<typename T>
-void Print(const T& buffer)
+class BMCE : Bank
 {
-	std::cout << buffer << std::endl;
-}
+public:
+
+	virtual std::string GetName() override;
+	virtual std::string GetNationnality() override;
+};
+
 
 int main()
 {
-	//Logger::LOG_LK("Hello world!", Marouane::INFO, Marouane::COLOR_YELLOW);
+	Logger::LOG_LK("Hello world!", Marouane::INFO, Marouane::COLOR_YELLOW);
 
-	Bank BMCE("BMCE");
-	//Logger::LOG_INFO(BMCE.GetName());
-	Print(BMCE.GetName());
+	
 
 	return 0;
 }
