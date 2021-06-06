@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Headers/Logger.h"
 #include "Headers/Bank.h"
+#include <array>
 
 using namespace Marouane;
 
@@ -17,7 +18,8 @@ int main()
 {
 	Logger::LOG_LK("Hello world!", Marouane::INFO, Marouane::COLOR_YELLOW);
 
-	
+	std::array<std::string, 10> sArray;
+	std::string Name = "Marouane";
 
 	return 0;
 }

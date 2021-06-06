@@ -127,25 +127,41 @@ project "GLFW"
 	filter "system:linux"
 	files
 	{
-			"VND/GLFW/src/wl_platform.h",
-			"VND/GLFW/src/posix_time.h",
-			"VND/GLFW/src/posix_thread.h",
-            "VND/GLFW/src/xkb_unicode.h",
-			"VND/GLFW/src/egl_context.h",
-			"VND/GLFW/src/osmesa_context.h",
-            "VND/GLFW/src/wl_init.c",
-			"VND/GLFW/src/wl_monitor.c",
-			"VND/GLFW/src/wl_window.c",
-			"VND/GLFW/src/posix_time.c",
-            "VND/GLFW/src/posix_thread.c",
-		  	"VND/GLFW/src/xkb_unicode.c",
-			"VND/GLFW/src/egl_context.c",
-            "VND/GLFW/src/osmesa_context.c"
+		"VND/GLFW/src/wl_platform.h",
+		"VND/GLFW/src/posix_time.h",
+		"VND/GLFW/src/posix_thread.h",
+		"VND/GLFW/src/xkb_unicode.h",
+		"VND/GLFW/src/egl_context.h",
+		"VND/GLFW/src/osmesa_context.h",
+		"VND/GLFW/src/wl_init.c",
+		"VND/GLFW/src/wl_monitor.c",
+		"VND/GLFW/src/wl_window.c",
+		"VND/GLFW/src/posix_time.c",
+		"VND/GLFW/src/posix_thread.c",
+		"VND/GLFW/src/xkb_unicode.c",
+		"VND/GLFW/src/egl_context.c",
+		"VND/GLFW/src/osmesa_context.c",
+		"VND/GLFW/src/x11_platform.h",
+		"VND/GLFW/src/xkb_unicode.h",
+		"VND/GLFW/src/posix_time.h",
+		"VND/GLFW/src/posix_thread.h",
+		"VND/GLFW/src/glx_context.h",
+		"VND/GLFW/src/egl_context.h",
+		"VND/GLFW/src/osmesa_context.h",
+		"VND/GLFW/src/x11_init.c",
+		"VND/GLFW/src/x11_monitor.c",
+		"VND/GLFW/src/x11_window.c",
+		"VND/GLFW/src/xkb_unicode.c",
+		"VND/GLFW/src/posix_time.c",
+		"VND/GLFW/src/posix_thread.c",
+		"VND/GLFW/src/glx_context.c",
+		"VND/GLFW/src/egl_context.c",
+		"VND/GLFW/src/osmesa_context.c"
 	}
 
 	defines
 	{
-		"_GLFW_LINUX",
+		"_GLFW_X11",
 	}
 
 	cppdialect "C++17"
