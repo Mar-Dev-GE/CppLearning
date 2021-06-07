@@ -2,7 +2,11 @@ premake5.exe
 .vs
 bin
 bin-int
-*.sln
-*.user
-*.vcxprojt
-*.filters
+
+
+# Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
